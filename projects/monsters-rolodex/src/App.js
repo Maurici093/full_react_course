@@ -1,5 +1,4 @@
 import {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -9,38 +8,38 @@ class App extends Component {
     super();
     
     this.state = {
+      monsters: [
+        {
+          id: 1,
+          name: 'Linda',
+        },
+        {
+          id: 2,
+          name: 'Frank',
+        },
+        {
+          id: 3,
+          name: 'Jacky',
+        },
+        {
+          id: 4,
+          name: 'Andrei',
+        },
+      ]
     };
   }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Hi {this.state.name.firstName} {this.state.name.lastName}, I work at {this.state.company}
-            <br/>
-            Clicks {this.state.count}
-          </p>
-          <button
-            onClick={() => {
-              let nextCount = this.state.count + 1;
-              this.setState((state,props)=>{
-                // State para obtener el valor del estado actual y renderizar de acuerdo a eso
-                // props es un objecto donde se le pueden pasar parametros a los componentes
-                return {name: {firstName: 'Mauricio', lastName: 'Varon'}, count: nextCount};
-              },
-              // Callback para esperar a que el estado se actualice primero 
-              // y realizar un accion posteriormente, ejecutar de manera sincrona.
-              ()=>{console.log(this.state)}
-              );
-            }}
-          >Change Name</button>
-        </header>
+         {
+          this.state.monsters.map((monster)=>{
+            return <h1 key={monster.id}>{monster.name}</h1>;
+          })
+        }
       </div>
     );
   }
 }
 
 export default App;
-
