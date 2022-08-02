@@ -12,4 +12,3 @@ Curso completo de react desde cero hasta los conceptos avanzados
 [Componentes y clases](components-class.md)  
 [Arreglos y keys](array-keys.md)  
 [Ciclo de vida - ComponentDidMount](life-cycle-componentDidMount.md)  
-
