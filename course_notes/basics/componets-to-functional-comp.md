@@ -1,0 +1,1 @@
+https://quiroga-architect.notion.site/Convertir-a-componentes-funcionales-60d66525f56f43d6a7c514b8fb0e3dd0

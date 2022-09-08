@@ -51,5 +51,3 @@ export default App;
 ```
 
 El map transforma en varios h1 con la llave del id y el contenido que es el nombre.
-
-s

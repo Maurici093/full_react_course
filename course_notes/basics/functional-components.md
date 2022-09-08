@@ -1,0 +1,1 @@
+https://quiroga-architect.notion.site/Componentes-funcionales-0968c1f8b6a74d8c8785cc85b735ecc0
